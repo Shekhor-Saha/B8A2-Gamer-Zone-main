@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.shadow {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+  padding: 20px;
+
+  /* background-color: yellow; */
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  font-weight: 900;
+  font-size: 30px;
+  padding: 20px;
+}
+
+.logo-text {
+  color: #ff42a5;
+}
+
+.menu-items,
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.avtive {
+  padding: 10px 40px;
+  border-radius: 10px;
+  background: rgba(11, 2, 35, 0.1);
+}
+
+.banar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.left-banar {
+  position: relative;
+  width: 50%;
+}
+
+.left-banar-text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.right-banar {
+  width: 50%;
+}
+
+h2 {
+  font-size: 48px;
+  padding: 10px;
+}
+
+h1 {
+  padding: 10px;
+  font-size: 70px;
+}
+
+p {
+  font-size: 18px;
+  padding: 10px;
+}
+
+.button {
+  background-color: #ff42a5;
+  color: white;
+  border: none;
+  padding: 20px 40px;
+  margin: 5px;
+  font-weight: 700;
+  border-radius: 25px 25px 25px 25px;
+}
+
+.color-linear {
+  background-image: linear-gradient(to bottom, #f948b2, #8758f1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blue-button {
+  background-color: #4ec5f7;
+}
+
+.we-are-gramer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.we-are-gramer-container-right {
+  text-align: right;
+  line-height: 0.8;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 10px 0px;
+}
+
+.we-are-gramer-container-text {
+  text-align: right;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* online gane funny videos  start */
+
+.funny-video-text {
+  text-align: center;
+}
+.funny-video-container {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.game-play-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 150px 0px;
+}
+
+.game-play-text-container {
+  width: 400px;
+  text-align: right;
+}
+
+.game-play-image-container {
+  position: relative;
+}
+
+.game-play-small-image {
+  position: absolute;
+  bottom: -100px;
+  left: -100px;
+}
+
+.game-play-botton-small-image {
+  position: absolute;
+  bottom: -100px;
+  right: -100px;
+}
+/* online game funny video end  */
+
+/* action button container start  */
+
+.action-main-container {
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.action-button {
+  width: 250px;
+  margin: 10px;
+  background: #f3efef;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.action-button > p {
+  font-weight: 900px;
+  padding: 10px;
+}
+.active {
+  color: #ff42a5;
+  border: 1px solid #f948b2;
+}
+
+/* footer start  */
+.footer-main-container {
+  background-color: #0b0223;
+  width: 100%;
+  margin-top: 50px;
+  color: white;
+}
+
+.footer-action-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  opacity: 70%;
+  /* background: red; */
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-container {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.icon {
+  width: 50px;
+  margin: 10px;
+}
+
+.smaill-icon {
+  width: 50;
+  height: 50px;
+  padding: 5px;
+}
+/* media query  */
+@media (max-width: 700px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+  }
+  .navigation {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    margin: auto;
+    /* background-color: red; */
+  }
+
+  .menu-items,
+  li {
+    flex-direction: column;
+  }
+  .shadow {
+    box-shadow: none;
+  }
+
+  /* banar start  */
+  .banar {
+    flex-direction: column-reverse;
+  }
+
+  .left-banar {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .left-banar > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .right-banar {
+    width: 100%;
+    height: 100%;
+  }
+
+  .we-are-gramer-container {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .we-are-gramer-container-right {
+    text-align: center;
+  }
+
+  .grammer-image {
+    width: 300px;
+  }
+
+  /* funny video comntainer  */
+  .funny-video-container {
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .game-play-container {
+    flex-direction: column;
+  }
+
+  .game-play-text-container {
+    text-align: center;
+  }
+
+  .game-play-big-image {
+    width: 350px;
+  }
+  .game-play-small-image {
+    width: 150px;
+    bottom: -70px;
+    left: -50px;
+  }
+
+  .game-play-botton-small-image {
+    width: 150px;
+    bottom: -50px;
+    right: -50px;
+  }
+
+  .botton-container {
+    flex-direction: column-reverse;
+  }
+  /* funny video end  */
+
+  /* action container start  */
+
+  .action-main-container {
+    width: 100%;
+  }
+
+  .action-button {
+    width: 200px;
+    margin: 10px;
+    background: white;
+    padding: 5px;
+  }
+
+  .action-button > img {
+    width: 40px;
+  }
+}
